@@ -1,0 +1,153 @@
+/* Global styles */
+.main {
+    background-color: #f8f9fa;
+}
+
+/* Header styling */
+.stTitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1a73e8;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 2px solid #e8eaed;
+}
+
+/* Description text */
+.stMarkdown p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5f6368;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Chat container styling */
+.stChatFloatingInputContainer {
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 12px;
+    padding: 0.5rem;
+}
+
+/* Message styling */
+.stChatMessage {
+    padding: 1.2rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* User message styling */
+[data-testid="stChatMessageUser"] {
+    background-color: #e8f0fe;
+    border-bottom-right-radius: 4px;
+    margin-left: 2rem;
+}
+
+/* Assistant message styling */
+[data-testid="stChatMessageAssistant"] {
+    background-color: white;
+    border: 1px solid #e8eaed;
+    border-bottom-left-radius: 4px;
+    margin-right: 2rem;
+}
+
+/* Input box styling */
+.stChatInputContainer {
+    padding: 1.2rem;
+    border-top: 1px solid #e8eaed;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.stChatInputContainer textarea {
+    border: 1px solid #e8eaed;
+    border-radius: 24px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.stChatInputContainer textarea:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 2px 6px rgba(26, 115, 232, 0.2);
+}
+
+/* Button styling */
+.stButton > button {
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 24px;
+    padding: 0.6rem 1.8rem;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+.stButton > button:hover {
+    background-color: #1557b0;
+    box-shadow: 0 2px 6px rgba(26, 115, 232, 0.3);
+    transform: translateY(-1px);
+}
+
+.stButton > button:active {
+    transform: translateY(0);
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: white;
+    border-right: 1px solid #e8eaed;
+    padding: 2rem 1rem;
+}
+
+/* Spinner styling */
+.stSpinner {
+    border-color: #1a73e8;
+}
+
+/* Error message styling */
+.stAlert {
+    background-color: #fce8e8;
+    color: #d93025;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #fad2d2;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f3f4;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dadce0;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bdc1c6;
+}
+
+/* Add some spacing at the bottom to prevent content from being hidden behind the input box */
+.main .block-container {
+    padding-bottom: 100px;
+} 
