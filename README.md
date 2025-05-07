@@ -1,79 +1,106 @@
-# AI Chat Assistant
+# 🤖 AI Chat Assistant
 
-A simple chatbot application built using Google's Gemini Pro model and Streamlit. This project demonstrates the use of Large Language Models (LLMs) in creating an interactive chat interface.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.28%2B-red)
+![Google Gemini](https://img.shields.io/badge/Google%20Gemini-2.0-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## Features
+A modern, intelligent chat assistant powered by Google's Gemini 2.0 model, featuring a sleek Streamlit interface and advanced conversation capabilities.
 
-- Interactive chat interface using Streamlit
-- Integration with Google's Gemini Pro model
-- Chat history management
-- Context-aware responses
-- Clean and modern UI
-- Error handling and input validation
+![Chat Assistant Demo](https://raw.githubusercontent.com/Abhirup0/AI-Chat-Assistant/master/static/demo.gif)
 
-## Setup
+## ✨ Features
+
+- 🧠 Powered by Google's Gemini 2.0 model for intelligent responses
+- 💬 Natural conversation flow with context awareness
+- 🎨 Modern, responsive UI design
+- 📝 Markdown support for formatted responses
+- 🔄 Chat history management
+- 🛡️ Input validation and error handling
+- 🎯 Configurable model parameters
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Python 3.8 or higher
+- Google Gemini API key
+
+### Installation
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/Abhirup0/AI-Chat-Assistant.git
+cd AI-Chat-Assistant
 ```
 
-2. Create and activate a virtual environment:
-```bash
-python -m venv venv
-# On Windows:
-.\venv\Scripts\activate
-# On Unix or MacOS:
-source venv/bin/activate
-```
-
-3. Install dependencies:
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Set up environment variables:
-   - Copy `.env.example` to `.env`
-   - Add your Google API key to the `.env` file
-
-5. Run the application:
+3. Set up environment variables:
 ```bash
-streamlit run src/main.py
+cp .env.example .env
+# Edit .env with your Google Gemini API key
 ```
 
-## Project Structure
+4. Run the application:
+```bash
+python -m streamlit run src/main.py
+```
+
+## 🛠️ Configuration
+
+The application can be configured through the `config.py` file:
+
+- `MAX_INPUT_LENGTH`: Maximum length of user input
+- `MAX_HISTORY_LENGTH`: Maximum number of conversation turns to maintain
+- Other model parameters and settings
+
+## 📁 Project Structure
 
 ```
-project/
-├── .env                    # API keys and configuration
-├── requirements.txt        # Project dependencies
-├── README.md              # Project documentation
+AI-Chat-Assistant/
 ├── src/
-│   ├── main.py            # Main application file
-│   ├── gemini_handler.py  # Gemini API integration
-│   ├── config.py          # Configuration management
-│   └── utils/
-│       └── prompt_utils.py # Prompt templates and utilities
-└── static/
-    └── styles.css         # Custom styling
+│   ├── main.py           # Main Streamlit application
+│   ├── gemini_handler.py # Gemini model integration
+│   ├── config.py        # Configuration settings
+│   └── utils/           # Utility functions
+├── static/              # Static assets and styles
+├── requirements.txt     # Project dependencies
+└── README.md           # Project documentation
 ```
 
-## Implementation Details
+## 🎯 Usage
 
-- Uses Google's Gemini Pro model for generating responses
-- Implements prompt engineering techniques for better context management
-- Maintains conversation history for contextual responses
-- Provides a clean and intuitive user interface using Streamlit
+1. Start the application using the command above
+2. Access the chat interface at `http://localhost:8501`
+3. Type your message in the chat input
+4. Receive intelligent responses from the AI assistant
 
-## Future Improvements
+## 🤝 Contributing
 
-- Add support for different conversation styles
-- Implement conversation memory management
-- Add support for file uploads and processing
-- Enhance error handling and rate limiting
-- Add user authentication
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-MIT License 
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Google Gemini API for providing the language model
+- Streamlit for the amazing web framework
+- All contributors and supporters of this project
+
+## 📧 Contact
+
+Abhirup - [@Abhirup0](https://github.com/Abhirup0)
+
+Project Link: [https://github.com/Abhirup0/AI-Chat-Assistant](https://github.com/Abhirup0/AI-Chat-Assistant) 
