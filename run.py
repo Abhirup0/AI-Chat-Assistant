@@ -1,10 +1,10 @@
-import streamlit.web.bootstrap as bootstrap
-from pathlib import Path
-
-def main():
-    """Run the Streamlit application."""
-    app_path = Path(__file__).parent / "src" / "main.py"
-    bootstrap.run(str(app_path), "", [], {})
+import os
+import sys
+import streamlit.cli as stcli
 
 if __name__ == "__main__":
-    main() 
+    sys.path.insert(0, os.path.abspath("."))
+    dirname = os.path.dirname(__file__)
+    filename = os.path.join(dirname, "src", "main.py")
+    sys.argv = ["streamlit", "run", filename]
+    stcli.main() 
